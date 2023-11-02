@@ -1,29 +1,20 @@
-# Dockerized Django Rest API Todo App
+# Django Rest API Todo App
 
-This is a simple Todo App built with Django Rest Framework (DRF) and containerized using Docker.
+This is a simple Todo App built with Django Rest Framework (DRF).
 
-## Table of Contents
-- [Requirements](#requirements)
-- [Getting Started](#getting-started)
-  - [Setting up the Development Environment](#setting-up-the-development-environment)
-  - [Building and Running with Docker](#building-and-running-with-docker)
-- [API Endpoints](#api-endpoints)
-- [Additional Information](#additional-information)
-  - [Dependencies](#dependencies)
-  - [Folder Structure](#folder-structure)
-  - [Docker Configuration](#docker-configuration)
+## Steps
+1) git clone https://github.com/ruhullahshaikh/todoapp.git
+2) cd todo
 
-## Requirements
-- Python 3.8+
-- Docker
-- Docker Compose
+3) Envoronment setup python -m venv venv
+venv\Scripts\activate
+4) Install Dependencies
+pip install -r requirements.txt
 
-## Getting Started
+5) Database setup
+python manage.py migrate
 
-### Setting up the Development Environment
+6) Run the server 
+python manage.py migrate
 
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/your_username/your_project.git
-   cd your_project
+Use Thunder client or postman to test the application.
