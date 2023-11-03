@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-!43xz5g!v5ha4-1-8uovlm*guhgs*qp%-lz!&#yy1@l-&qz%cx
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -80,6 +80,18 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'todoapp',
+#         'USER': 'ruhullah',
+#         'PASSWORD': '1234567890aA',
+#         'HOST': 'db',  # This should match the service name in your Docker Compose file
+#         'PORT': '5432',
+#     }
+# }
 
 
 # Password validation

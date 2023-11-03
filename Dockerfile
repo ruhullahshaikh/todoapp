@@ -10,11 +10,14 @@ COPY . /app
 # Install any needed packages specified in requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
+# Install Gunicorn
+RUN pip install gunicorn
+
 # Make port 8000 available to the world outside this container
 EXPOSE 8000
 
 # Define environment variable for Django
-ENV DJANGO_SETTINGS_MODULE=your_project_name.settings
+ENV DJANGO_SETTINGS_MODULE=todo.settings
 
-# Run migrations and start the application
-CMD ["bash", "-c", "python manage.py migrate && gunicorn --bind 0.0.0.0:8000 your_project_name.wsgi:application"]
+# CMD to run migrations and start the application
+CMD ["bash", "-c", "python manage.py migrate && gunicorn --bind 0.0.0.0:8000 todo.wsgi:application"]
