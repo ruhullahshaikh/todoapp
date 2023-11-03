@@ -26,9 +26,9 @@ Use Thunder client or postman to test the application.
 # Available Endpoints
 ## Run in Thunder clinet or postman
 
-Admin Interface: http://localhost:8000/admin/
-List Tasks: http://localhost:8000/list-tasks/
-Get Task: http://localhost:8000/get-task/{task_id}/
-Create Task: http://localhost:8000/create-task/
-Update Task: http://localhost:8000/update-task/{task_id}/
-Delete Task: http://localhost:8000/delete-task/{task_id}/
+#### Admin Interface: http://localhost:8000/admin/
+#### List Tasks: http://localhost:8000/list-tasks/
+#### Get Task: http://localhost:8000/get-task/{task_id}/
+#### Create Task: http://localhost:8000/create-task/
+#### Update Task: http://localhost:8000/update-task/{task_id}/
+#### Delete Task: http://localhost:8000/delete-task/{task_id}/
